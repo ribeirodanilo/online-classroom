@@ -40,6 +40,6 @@ export default async (
   } else {
     res
       .status(400)
-      .json({ message: 'Method not implemented! [' + req.method + ']' });
+      .json({ error: 'Method not implemented! [' + req.method + ']' });
   }
 };
